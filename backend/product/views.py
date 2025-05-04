@@ -12,7 +12,7 @@ import json
 from django.http import JsonResponse
 
 # Configure the Gemini API
-genai.configure(api_key="AIzaSyBArAt3Mz6GTZ1M5DumBI6VboJYWcCxaCA")
+genai.configure(api_key="Place your gemini api key")
 
 
 class ProductView(APIView):
