@@ -24,7 +24,7 @@ function ContactUsPage() {
     const loadGoogleMapsScript = () => {
       if (!window.google) {
         const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBvUOUKBlaK81M0jGJKDIJy0D9XLxSNoPE&libraries=places`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=place you google map keys`;
         script.async = true;
         script.defer = true;
         script.onload = () => {
