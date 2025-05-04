@@ -1,0 +1,130 @@
+/* ProductsListPage.css - Modern styling for the products listing page */
+
+.products-page {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.products-title {
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+/* Categories Navigation Styling */
+.categories-nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 1.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0.5rem 0;
+}
+
+.category-link {
+  color: #4a5568;
+  border-radius: 20px;
+  padding: 0.5rem 1.25rem;
+  margin: 0 0.25rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  background-color: #f7fafc;
+}
+
+.category-link:hover {
+  background-color: #e2e8f0;
+  color: #2d3748;
+}
+
+.category-link.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.filters-section {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1rem;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+  border-color: #818cf8;
+}
+
+#sort-dropdown {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1rem;
+  color: #4a5568;
+}
+
+.products-grid {
+  min-height: 400px;
+}
+
+.nothing-found {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+/* Animation for products */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.products-grid .col {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Make categories scrollable on mobile */
+@media (max-width: 768px) {
+  .categories-nav {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .filters-section .row {
+    flex-direction: column;
+  }
+
+  .filters-section .col-md-4 {
+    margin-top: 1rem;
+  }
+
+  .float-md-end {
+    float: none !important;
+    width: 100%;
+  }
+
+  #sort-dropdown {
+    width: 100%;
+    text-align: center;
+  }
+}

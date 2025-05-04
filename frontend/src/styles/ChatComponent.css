@@ -1,0 +1,124 @@
+/* Chat Component Styling */
+.chat-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: var(--border-radius);
+  background-color: white;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.chat-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.chat-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.chat-auth-message {
+  text-align: center;
+  padding: 50px;
+  background-color: #f8f9fa;
+  border-radius: var(--border-radius);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.chat-auth-message h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.chat-info {
+  background-color: #f8f9fa;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+  border-top: 1px solid #eee;
+}
+
+/* ChatEngine Custom Styling Overrides */
+.ce-chat-list {
+  background-color: #f0f2f5 !important;
+}
+
+.ce-chats-container {
+  background-color: #f0f2f5 !important;
+}
+
+.ce-active-chat-card {
+  background-color: #e6f2ff !important;
+  border-radius: 8px !important;
+}
+
+.ce-chat-title-text {
+  color: var(--text-color) !important;
+  font-weight: 600 !important;
+}
+
+.ce-chat-subtitle-text {
+  color: var(--text-light) !important;
+}
+
+.ce-chat-form-container {
+  background-color: white !important;
+  padding: 15px !important;
+}
+
+.ce-message-list {
+  background-color: white !important;
+}
+
+.ce-my-message-bubble {
+  background-color: var(--primary-color) !important;
+}
+
+.ce-my-message-text {
+  color: white !important;
+}
+
+.ce-their-message-bubble {
+  background-color: #f0f2f5 !important;
+}
+
+.ce-message-date-text {
+  color: var(--text-light) !important;
+  font-size: 0.7rem !important;
+}
+
+.ce-my-message-timestamp {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .chat-container {
+    margin: 10px;
+    border-radius: 0;
+  }
+
+  .ce-chat-list {
+    display: none !important;
+  }
+
+  .ce-chat-feed-container {
+    width: 100% !important;
+  }
+}
